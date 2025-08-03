@@ -1,0 +1,123 @@
+/* === Google Fonts === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Fira+Code&display=swap');
+
+/* === Base Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7ff;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #4b0082; /* Indigo */
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #e63946; /* Red Rose */
+  margin-top: 20px;
+}
+
+/* === Nav or Theme Toggle === */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: #ffd166;
+  color: #222;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #ffa600;
+}
+
+/* === Sections === */
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-left: 6px solid #6a4c93;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+
+/* === Links === */
+a {
+  color: #1d3557;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #ff6b6b;
+  text-decoration: underline;
+}
+
+/* === Projects === */
+.project {
+  margin-top: 15px;
+  padding: 10px;
+  background: #edf2fb;
+  border-left: 4px solid #457b9d;
+  border-radius: 5px;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* === Light and Dark Theme === */
+body.dark {
+  background-color: #121212;
+  color: #eeeeee;
+}
+
+body.dark section {
+  background: #1e1e1e;
+  border-left-color: #bb86fc;
+}
+
+body.dark a {
+  color: #bb86fc;
+}
+
+body.dark .theme-toggle {
+  background: #333;
+  color: #fff;
+}
+
+/* === Responsive Layout === */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
